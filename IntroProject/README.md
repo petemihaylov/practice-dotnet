@@ -1,4 +1,4 @@
-### Introduction project Fontys ICT
+# Introduction project Fontys ICT
 - using  .NET Core and .NET Framework 4.5
 - SQL Server 2017
 - C# Windows Forms Application
