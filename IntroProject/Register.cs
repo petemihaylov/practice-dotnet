@@ -13,34 +13,35 @@ namespace LoginApp
 {
     public partial class Register : Form
     {
-        private string connectionString = "Data Source=DESKTOP-2V6003F\\MSSQLSERVER03;Initial Catalog=IntroDB;Integrated Security=True";
-
-        private SqlConnection con;
-
+        private string username;
+        private string password;
+        private UserDAO dao = new UserDAO();
 
         public Register()
         {
             InitializeComponent();
-            con = new SqlConnection();
-            con.ConnectionString = connectionString;
-            con.Open();
         }
 
         private void Submit_Click(object sender, EventArgs e)
         {
-            string username = tbUser.Text;
-            string password = tbPassword.Text;
+            username = tbUser.Text;
+            password = tbPassword.Text;
 
-
-            if (checkIfExists(username, con))
-            {
-                MessageBox.Show("Sorry try with different name!");
-            }
+            if (dao.IfExists(username))
+                MessageBox.Show("Sorry try with a different username!");
             else
             {
                 if (tbPasswordValid.Text != tbPassword.Text || string.IsNullOrWhiteSpace(tbPassword.Text) || string.IsNullOrWhiteSpace(tbUser.Text))
-                    MessageBox.Show("Validation is not correct!");
-                else executeInsert(username, password);
+                    MessageBox.Show("Password validation is not correct!");
+                else {
+
+                    dao.Insert(username, password);
+
+                    this.Hide();
+                    FormLogin formLogin = new FormLogin();
+                    formLogin.Closed += (s, args) => this.Close();
+                    formLogin.Show();
+                }
             }
         }
 
@@ -56,36 +57,7 @@ namespace LoginApp
                 tbPassword.UseSystemPasswordChar = true;
                 tbPasswordValid.UseSystemPasswordChar = true;
             }
-        }
-        private bool checkIfExists(string username, SqlConnection con)
-        {
-            SqlCommand command = new SqlCommand("SELECT count(*) FROM Users WHERE username = '" +
-                username + "'", con);
-
-            if ((int)command.ExecuteScalar() > 0) return true;
-            return false;
-        }
-        private void executeInsert(string username, string password)
-        {
-
-            SqlCommand command;
-            SqlDataReader dataReader;
-
-            string encryptedstring = StringCipher.Encrypt(password);
-
-            command = new SqlCommand("INSERT INTO dbo.Users([Username],[Password]) VALUES" +
-                "(N'" + username + "', N'" + encryptedstring + "')", con);
-
-            MessageBox.Show(encryptedstring);
-                dataReader = command.ExecuteReader();
-                dataReader.Close();
-
-                FormLogin formLogin = new FormLogin();
-
-                this.Close();
-                formLogin.Show();
-
-        }
+        } 
 
     }
 }

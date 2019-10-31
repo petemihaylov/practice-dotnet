@@ -83,6 +83,26 @@ namespace LoginApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _240_F_91706719_zDyN35Gq7InyvWBKhGi2No7GOh0rJ5u81 {
+            get {
+                object obj = ResourceManager.GetObject("240_F_91706719_zDyN35Gq7InyvWBKhGi2No7GOh0rJ5u81", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _240_F_91706719_zDyN35Gq7InyvWBKhGi2No7GOh0rJ5u82 {
+            get {
+                object obj = ResourceManager.GetObject("240_F_91706719_zDyN35Gq7InyvWBKhGi2No7GOh0rJ5u82", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _3 {
             get {
                 object obj = ResourceManager.GetObject("3", resourceCulture);
@@ -96,6 +116,16 @@ namespace LoginApp.Properties {
         internal static System.Drawing.Bitmap _31 {
             get {
                 object obj = ResourceManager.GetObject("31", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calzone {
+            get {
+                object obj = ResourceManager.GetObject("calzone", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +153,49 @@ namespace LoginApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap images_ddd {
+        internal static System.Drawing.Bitmap download1 {
             get {
-                object obj = ResourceManager.GetObject("images ddd", resourceCulture);
+                object obj = ResourceManager.GetObject("download1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hawaii {
+            get {
+                object obj = ResourceManager.GetObject("hawaii", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pepperoni {
+            get {
+                object obj = ResourceManager.GetObject("pepperoni", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pizza {
+            get {
+                object obj = ResourceManager.GetObject("pizza", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pizza2 {
+            get {
+                object obj = ResourceManager.GetObject("pizza2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

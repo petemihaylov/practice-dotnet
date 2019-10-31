@@ -52,6 +52,17 @@
     <Compile Include="CashierApp.Designer.cs">
       <DependentUpon>CashierApp.cs</DependentUpon>
     </Compile>
+    <Compile Include="CookApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CookApp.Designer.cs">
+      <DependentUpon>CookApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="StringCipher.cs" />
     <Compile Include="LoginApp.cs">
       <SubType>Form</SubType>
@@ -67,22 +78,21 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserDAO.cs" />
     <EmbeddedResource Include="CashierApp.resx">
       <DependentUpon>CashierApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CookApp.resx">
+      <DependentUpon>CookApp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginApp.resx">
       <DependentUpon>LoginApp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,6 +129,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\download %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calzone.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calzone.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hawaii.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pepperoni.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pizza.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pizza2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -14,59 +14,53 @@ namespace LoginApp
 {
     public partial class FormLogin : Form
     {
-        private string connectionString = "Data Source=DESKTOP-2V6003F\\MSSQLSERVER03;Initial Catalog=IntroDB;Integrated Security=True";
-        
-
-
+        private string username;
+        private string password;
         public FormLogin()
         {
             InitializeComponent();
-
         }
 
         private void Login_Click(object sender, EventArgs e)
         {
-            SqlCommand command;
+            this.username = tbUsername.Text;
+            this.password = tbPassword.Text;
 
-            SqlConnection con = new SqlConnection();
-            con.ConnectionString = connectionString;
-            con.Open();
+            UserDAO dao = new UserDAO();
+            string decrypt = dao.SelectPassword(username, password);
 
-            string username = tbUsername.Text;
-            string password = tbPassword.Text;
+            if (password == decrypt){
 
 
-            command = new SqlCommand("Select password from Users where username='" + 
-                username + "'", con);
+                if (username == "cooker")
+                {
+                    this.Hide();
 
-            command.Parameters.AddWithValue("password","");
-            using (SqlDataReader reader = command.ExecuteReader())
-            {
-                if (reader.Read())
-                {  
-                    string decrypt= StringCipher.Decrypt(reader["password"].ToString());
-                    if (password == decrypt)
-                    {
-                        this.Hide();
-                        CashierApp cashier = new CashierApp();
-
-                        cashier.Closed += (s, args) => this.Close();  
-                        cashier.Show();
-                    }
-                    else MessageBox.Show("Invalid input!");
+                    CookApp cookApp = new CookApp();
+                    cookApp.Closed += (s, args) => this.Close();
+                    cookApp.Show();
                 }
-            }
+                else {
+                    this.Hide();
 
-            
-            command.Dispose();
+                    CashierApp cashier = new CashierApp();
+                    cashier.Closed += (s, args) => this.Close();
+                    cashier.Show();
+                }
+                
+            }
+            else MessageBox.Show("ERROR! Invalid input!");
+
         }
 
         private void Label4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Register r = new Register();
-            r.Closed += (s, args) => this.Close();
-            r.Show();
+
+            Register register = new Register();
+            register.Closed += (s, args) => this.Close();
+            register.Show();
         }
+
     }
 }
