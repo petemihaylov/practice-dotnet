@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashierApp", "CashierApp\CashierApp.csproj", "{28BA3FCF-E9D8-44B3-BD15-49FCEF4B4181}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookerApp", "CookerApp\CookerApp.csproj", "{37CD5105-DF35-40BB-95AA-BAB3DFCCB27A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28BA3FCF-E9D8-44B3-BD15-49FCEF4B4181}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28BA3FCF-E9D8-44B3-BD15-49FCEF4B4181}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28BA3FCF-E9D8-44B3-BD15-49FCEF4B4181}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28BA3FCF-E9D8-44B3-BD15-49FCEF4B4181}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37CD5105-DF35-40BB-95AA-BAB3DFCCB27A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37CD5105-DF35-40BB-95AA-BAB3DFCCB27A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37CD5105-DF35-40BB-95AA-BAB3DFCCB27A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37CD5105-DF35-40BB-95AA-BAB3DFCCB27A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF7E2EAD-BA69-40D4-9935-98CAAAD972BB}
+	EndGlobalSection
+EndGlobal
