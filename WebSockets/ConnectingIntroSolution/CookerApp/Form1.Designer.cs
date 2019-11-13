@@ -35,6 +35,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -53,7 +54,6 @@
             this.time = new System.Windows.Forms.Label();
             this.btnStat = new System.Windows.Forms.Button();
             this.myport = new System.IO.Ports.SerialPort(this.components);
-            this.progressBar = new System.Windows.Forms.ProgressBar();
             this.lbCount = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
@@ -119,6 +119,13 @@
             this.panel2.Size = new System.Drawing.Size(327, 791);
             this.panel2.TabIndex = 18;
             // 
+            // progressBar
+            // 
+            this.progressBar.Location = new System.Drawing.Point(47, 229);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(232, 10);
+            this.progressBar.TabIndex = 30;
+            // 
             // panel1
             // 
             this.panel1.BackgroundImage = global::CookerApp.Properties.Resources.background;
@@ -179,7 +186,7 @@
             this.tbInfo.Name = "tbInfo";
             this.tbInfo.Size = new System.Drawing.Size(594, 33);
             this.tbInfo.TabIndex = 22;
-            this.tbInfo.Text = "some";
+            this.tbInfo.Text = "select an order";
             this.tbInfo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel5
@@ -303,13 +310,6 @@
             this.btnStat.Text = "Statistics";
             this.btnStat.UseVisualStyleBackColor = false;
             this.btnStat.Click += new System.EventHandler(this.BtnStat_Click);
-            // 
-            // progressBar
-            // 
-            this.progressBar.Location = new System.Drawing.Point(47, 229);
-            this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(232, 10);
-            this.progressBar.TabIndex = 30;
             // 
             // lbCount
             // 

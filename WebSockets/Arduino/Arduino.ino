@@ -1,6 +1,5 @@
 #include "Display.h"
 
-
 const int LED1 = 4;
 const int LED2 = 5;
 const int LED3 = 6;
@@ -43,7 +42,7 @@ void loop() {
           Serial.println(count);
           digitalWrite(LED3, HIGH);
           delay(300);
-          //tone(BUZZER, e4, 250);
+          tone(BUZZER, e4, 250);
         }
         
         Display.show(count);
