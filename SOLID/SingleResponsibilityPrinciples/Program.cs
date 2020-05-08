@@ -5,7 +5,7 @@ namespace SingleResponsibilityPrinciples
     class Program
     {
         static void Main(string[] args)
-        {
+        {   
             StandartMessage.WelcomeMessage();
 
             Person user = PersonDataCapture.Capture();

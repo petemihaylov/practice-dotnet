@@ -8,7 +8,6 @@ namespace OCPLibrary
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
-
         public IAccounts AccountProccessor { get; set; } = new Accounts();
     }
 }
