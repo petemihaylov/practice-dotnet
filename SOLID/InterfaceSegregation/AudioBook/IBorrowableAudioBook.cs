@@ -4,7 +4,7 @@ using System.Text;
 
 namespace InterfaceSegregation.Library
 {
-    interface IBorrowableAudioBook
+    interface IBorrowableAudioBook : IAudioBook, IBorrowable
     {
     }
 }

@@ -4,7 +4,8 @@ using System.Text;
 
 namespace InterfaceSegregation.Library
 {
-    interface IAudioBook
+     interface IAudioBook : ILibraryItem
     {
+        int RuntimeInMinutes { get; set; }
     }
 }

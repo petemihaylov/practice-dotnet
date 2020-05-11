@@ -4,7 +4,10 @@ using System.Text;
 
 namespace InterfaceSegregation.Library
 {
-    interface Interface1
+    interface IBook : ILibraryItem
     {
+        string Author { get; set; }
+        int Pages{ get; set;}
+
     }
 }
