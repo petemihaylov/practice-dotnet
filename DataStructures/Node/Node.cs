@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Node
 {
-    class Node<Type>
+    public class Node<Type>
     {
         private Type value;
         private Node<Type> next; // pointer to the next value
