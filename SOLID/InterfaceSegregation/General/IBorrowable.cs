@@ -6,7 +6,6 @@ namespace InterfaceSegregation.Library
 {
     interface IBorrowable 
     {
-
         DateTime BorrowDate { get; set; }
         string Borrower { get; set; }
         int CheckOutDurationInDays { get; set; }

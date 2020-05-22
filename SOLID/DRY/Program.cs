@@ -6,7 +6,14 @@ namespace DRY
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Input FirstName: ");
+            var firstName = Console.ReadLine();
+
+            Console.WriteLine("Input LastName: ");
+            var lastName = Console.ReadLine();
+
+            string employeeId = new EmployeeProcessor().GenerateEmployeeId(firstName, lastName);
         }
+
     }
 }
