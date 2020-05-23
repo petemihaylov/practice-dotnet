@@ -21,3 +21,8 @@
 ### Doubly Linked list 
 
 > It is a type of linked list in which **each node** apart from storing its data **has two references**.
+
+### Stack
+
+> It is basic data structure that can be logically thought of as a linear structure represented by a real physical stack or pile.
+> It is a structure where insertion and deletion of items takes place at one end called top of the stack.
