@@ -25,7 +25,6 @@ namespace Node
             }
             this.Count++;
         }
-
         public void AddLast(Type item)
         {
             Node oldTail = this.tail;
@@ -42,7 +41,6 @@ namespace Node
             }
             this.Count++;
         }
-
 
         public Type RemoveFirst()
         {
