@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatchingBrackets", "Matchin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedStack", "LinkedStack\LinkedStack.csproj", "{D424CA24-D8B6-4BE7-8492-CFBDC710BD66}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicQueue", "DynamicQueue\DynamicQueue.csproj", "{F472D4E4-E69D-4B64-AE68-15D8D8683A09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircularQueue", "CircularQueue\CircularQueue.csproj", "{8500458B-8BA9-4188-AD31-3219C45CDBE3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{D424CA24-D8B6-4BE7-8492-CFBDC710BD66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D424CA24-D8B6-4BE7-8492-CFBDC710BD66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D424CA24-D8B6-4BE7-8492-CFBDC710BD66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F472D4E4-E69D-4B64-AE68-15D8D8683A09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F472D4E4-E69D-4B64-AE68-15D8D8683A09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F472D4E4-E69D-4B64-AE68-15D8D8683A09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F472D4E4-E69D-4B64-AE68-15D8D8683A09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8500458B-8BA9-4188-AD31-3219C45CDBE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8500458B-8BA9-4188-AD31-3219C45CDBE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8500458B-8BA9-4188-AD31-3219C45CDBE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8500458B-8BA9-4188-AD31-3219C45CDBE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
