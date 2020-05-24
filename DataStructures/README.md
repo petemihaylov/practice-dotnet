@@ -41,3 +41,14 @@
 
 - Breadth First Search **(BFS)**
 
+### Binary Tree
+
+> It is a Tree data structure in which each node has at most two children, 
+> which are referred to as the left child and the right child.
+
+
+- Preorder **(Root, Left, Right)**
+
+- Inorder **(Left, Root, Right)**
+
+- Postorder **(Left, Right, Root)**
