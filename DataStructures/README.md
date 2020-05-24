@@ -26,3 +26,18 @@
 
 > It is basic data structure that can be logically thought of as a linear structure represented by a real physical stack or pile.
 > It is a structure where insertion and deletion of items takes place at one end called top of the stack.
+
+### Circular Queue
+
+> It is a linear data structure in which the operations are performed based on **FIFO** (First In First Out) principle 
+> and the last position is connected back to the first position to make a circle.
+
+### Tree
+
+> It simulates a hierarchical tree structure, with a **root** value and subtrees of **children** with a **parent node**,
+> represented as a set of linked nodes.
+
+- Depth first Search tree **(DFS)**
+
+- Breadth First Search **(BFS)**
+

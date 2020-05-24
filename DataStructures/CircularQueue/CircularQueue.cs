@@ -75,7 +75,6 @@ namespace CircularQueue
             {
                 for (int k = 0,  i = startIndex; i < endIndex; i++)
                     result[k++] = elements[i];
-  
 
             }
             else
