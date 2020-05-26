@@ -5,14 +5,27 @@ namespace BinarySearchTree
 {
     public class BinarySearchTree<T> where T : IComparable<T>
     {
-        public Node root;
-        public BinarySearchTree()
+        public Node root = null;
+        private BinarySearchTree(Node node)
         {
-            this.root = null;
+             this.Copy(node);
+        }
+
+        private void Copy(Node node)
+        {
+            if (node == null) return;
+            this.Insert(node.Value);
+            this.Copy(node.Left);
+            this.Copy(node.Right);
         }
 
         public void Insert(T value)
         {
+            // Recursive way 
+            //this.root = Insert(this.root, value);
+
+
+            // Iterative way
             if(this.root == null)
             {
                 root = new Node(value);
@@ -52,6 +65,7 @@ namespace BinarySearchTree
 
         }
 
+        // Recursive way
         private Node Insert(Node node, T value)
         {
             if(node == null)
@@ -65,7 +79,7 @@ namespace BinarySearchTree
             {
                 node.Left = this.Insert(node.Left, value);
             }
-            else
+            else if(compare < 0)
             {
                 node.Right = this.Insert(node.Right, value);
             }
@@ -73,29 +87,67 @@ namespace BinarySearchTree
             return null;
         }
 
-        public bool lins(T value)
+        public bool Contains(T value)
         {
-            throw new NotImplementedException();
-        }
+            Node current = this.root;
 
-        public void DeleteMin()
-        {
-            throw new NotImplementedException();
+            while(current != null)
+            {
+                int compare = current.Value.CompareTo(value);
+
+                if(compare > 0)
+                {
+                    current = current.Left;
+                }else if(compare < 0)
+                {
+                    current = current.Right;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
 
         public BinarySearchTree<T> Search(T item)
         {
-            throw new NotImplementedException();
+            Node current = this.root;
+
+            while(current != null)
+            {
+                int compare = current.Value.CompareTo(item);
+
+                if(compare > 0)
+                {
+                    current = current.Left;
+                }
+                else if(compare < 0)
+                {
+                    current = current.Right;
+                }
+                else
+                {
+                    return new BinarySearchTree<T>(current);
+                }
+            }
+            return new BinarySearchTree<T>(null);
         }
 
-        public IEnumerable<T> Range(T startRange, T endRange)
-        {
-            throw new NotImplementedException();
-        }
-
+        
         public void EachInOrder(Action<T> action)
         {
-            throw new NotImplementedException();
+            this.EachInOrder(this.root, action);
+        }
+
+        private void EachInOrder(Node node, Action<T> action)
+        {
+            if (node == null) return;
+
+            this.EachInOrder(node.Left, action);
+            action(node.Value);
+            this.EachInOrder(node.Right, action);
         }
 
 
