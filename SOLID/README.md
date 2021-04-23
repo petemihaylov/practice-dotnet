@@ -1,6 +1,6 @@
 ## SOLID Design principles
 
- - It is a mnemonic acronym for **five design principles** intended to make software designs more understandable, flexible and maintainable.
+It is a mnemonic acronym for **five design principles** intended to make software designs more understandable, flexible and maintainable.
 
 
 1. **Single Responsibility Principle**

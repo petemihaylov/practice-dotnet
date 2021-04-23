@@ -1,8 +1,6 @@
-![You can contribute](https://img.shields.io/static/v1?label=&message=contribute&color=green&style=flat-square)
-
 # Data Structures
 
-> Storage format that enable us to access and modificate it efficiantly.
+> Storage format that enable us to access and modify it efficiently.
 > It's an abstract collection of data values, and relationship among them.
 
 
@@ -14,11 +12,11 @@
 
 ### Linked List
 
-> Linear data structure where every element is a separeted object [node](). 
+> Linear data structure where every element is a separated object [node](). 
 > Each element is linked using pointers. 
 > Each node of a list is made up of two items - the **value** and a **reference** to the next node.
 
-### Doubly Linked list 
+### Doubly Linked List 
 
 > It is a type of linked list in which **each node** apart from storing its data **has two references**.
 
