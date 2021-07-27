@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace Catalog.Controllers
+namespace PocketBook.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -23,7 +23,7 @@ namespace Catalog.Controllers
             _logger = logger;
         }
 
-        [HttpGet]
+        [HttpGet("/")]
         public IEnumerable<WeatherForecast> Get()
         {
             var rng = new Random();

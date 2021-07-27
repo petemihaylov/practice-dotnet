@@ -1,6 +1,6 @@
 using System;
 
-namespace Catalog
+namespace PocketBook
 {
     public class WeatherForecast
     {
