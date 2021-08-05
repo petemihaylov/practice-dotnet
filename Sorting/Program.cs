@@ -6,8 +6,6 @@ namespace Sorting
     class Program
     {
 
-
-
         static void Main(string[] args)
         {
 
@@ -32,7 +30,6 @@ namespace Sorting
                 }
                 break;
             }
-
             int[] arr;
             if (ReadInput(out arr, length) == false)
             {
@@ -47,7 +44,6 @@ namespace Sorting
 
             BubbleSortRecursive(arr, length);
             PrintResult(arr, "BubbleSortRecursive");
-
         }
 
         static void PrintResult(int[] arr, string algoName)
